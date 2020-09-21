@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "TinyErrand-UniApp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -39,7 +39,11 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "lint:fix": "eslint --ext .js,.vue src -c .eslintrc.js --fix",
+    "release": "release-it",
+    "vue:lint": "vue-cli-service lint",
+    "vue:lintfix": "vue-cli-service lint --fix"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-28920200907001",
@@ -80,8 +84,16 @@
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
+    "node-sass": "^4.14.1",
     "postcss-comment": "^2.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "sass-loader": "^10.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2"
   },
   "browserslist": [
     "Android >= 4",

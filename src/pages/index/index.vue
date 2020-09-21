@@ -1,9 +1,11 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
+    <u-field
+        v-model="mobile"
+        label="手机号"
+        placeholder="请填写手机号"
+    >
+    </u-field>
 	</view>
 </template>
 
@@ -11,7 +13,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+        mobile: 'Hello'
 			}
 		},
 		onLoad() {
@@ -23,7 +25,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.content {
 		display: flex;
 		flex-direction: column;
