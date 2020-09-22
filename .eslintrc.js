@@ -1,12 +1,11 @@
 module.exports = {
+    root: true,
+    extends: ['eslint:recommended', 'plugin:vue/essential', '@vue/standard'],
     env: {
         browser: true,
         es6: true,
         node: true
     },
-
-    extends: ['eslint:recommended', 'plugin:vue/essential'],
-
     globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly',
@@ -34,6 +33,7 @@ module.exports = {
         "no-undef": 1,	//不能有未定义的变量
         'indent': [0, 2], // 缩进风格 - 开启缩进2格
         "quotes": [1, "single"],	//引号类型 - 单引号
+        "comma-dangle": [2, "never"],
         "valid-jsdoc": 0,	//jsdoc规则
         "eqeqeq": 2,	//必须使用全等
         "no-multi-spaces": 1,	//不能用多余的空格
@@ -48,9 +48,5 @@ module.exports = {
         "dot-notation": 0, //获取对象属性的时候使用点号
         'one-var': 0, // 禁用连续声明
         'prefer-const': 0  // 优先使用const
-    },
-
-    root: true,
-
-    extends: ['eslint:recommended', 'plugin:vue/essential', '@vue/standard']
+    }
 };

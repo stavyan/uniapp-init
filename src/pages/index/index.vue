@@ -14,15 +14,15 @@
 		data() {
 			return {
         mobile: 'Hello'
-			}
+			};
 		},
 		onLoad() {
-
+      // let a = 1;
 		},
 		methods: {
 
 		}
-	}
+	};
 </script>
 
 <style lang="scss">

@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import App from './App'
+import Vue from 'vue';
+import App from './App';
 import store from '@/store';
-import uView from 'uview-ui'
+import uView from 'uview-ui';
 
 // 引入全局配置
 import $mAssetsPath from '@/config/assets.config.js';
@@ -76,12 +76,12 @@ $mRouter.beforeEach((navType, to) => {
   }
 });
 
-Vue.use(uView)
+Vue.use(uView);
 
-App.mpType = 'app'
+App.mpType = 'app';
 
 const app = new Vue({
   store,
   ...App
-})
-app.$mount()
+});
+app.$mount();

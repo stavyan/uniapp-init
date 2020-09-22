@@ -16,6 +16,7 @@ class Setting {
 	set appLogo(value) {
 		this._appLogo = value;
 	}
+
 	constructor(
 		appName,
 		appLogo
@@ -23,8 +24,8 @@ class Setting {
 		this._appName = appName; // 应用名称
 		this._appLogo = appLogo; // 应用Logo
 	}
-
 }
+
 export default new Setting(
 	$mConstData.appName,	// 应用名称
 	$mAssetsPath.logo	// 应用logo
